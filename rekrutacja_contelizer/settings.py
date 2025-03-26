@@ -37,7 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'mixtext',
+    'mix_text',
     'pesel_validator',
 ]
 
@@ -57,7 +57,7 @@ TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
         'DIRS': [
-            BASE_DIR / 'mixtext' / 'templates',
+            BASE_DIR / 'mix_text' / 'templates',
             BASE_DIR / 'rekrutacja_contelizer' / 'templates',
             BASE_DIR / 'pesel_validator' / 'templates',
         ],

@@ -1,5 +1,5 @@
 """
-URL configuration for project_mixtext project.
+URL configuration for project_mix_text project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/5.1/topics/http/urls/
@@ -20,7 +20,7 @@ from django.views.generic.base import TemplateView
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('mixtext/', include('mixtext.urls')), 
+    path('mix_text/', include('mix_text.urls')), 
     path('pesel/', include('pesel_validator.urls')),
     path('', TemplateView.as_view(template_name='main.html'), name='home') 
 ]

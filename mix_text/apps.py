@@ -1,6 +1,6 @@
 from django.apps import AppConfig
 
 
-class MixtextConfig(AppConfig):
+class mix_textConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'mixtext'
+    name = 'mix_text'

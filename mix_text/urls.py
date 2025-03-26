@@ -4,6 +4,6 @@ from . import views
 
 
 urlpatterns = [
-    path('', views.mixText, name='mixtext'),
+    path('', views.mix_text, name='mix_text'),
     path('results/', views.results, name='results'),
 ]
