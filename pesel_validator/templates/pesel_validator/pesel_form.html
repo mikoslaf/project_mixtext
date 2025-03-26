@@ -1,0 +1,21 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<form method="post">
+    {% csrf_token %}
+    {{ form.as_p }}
+    <p><button type="submit">Upload</button></p>
+</form>
+
+{% if date_of_birth and gender %}
+    <p>PESEL is valid</p>
+    <p>Date of birth: {{ date_of_birth }}</p>
+    <p>Gender: {{ gender }}</p>
+{% endif %}
+
+{% if error %}
+    <p>{{ error }}</p>
+{% endif %}
+
+{% endblock %}

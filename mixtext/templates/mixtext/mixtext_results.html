@@ -1,0 +1,14 @@
+{% extends "main.html" %}
+
+{% block content %}
+
+<p>The list of mixed words:</p>
+{% if mixed_words %}
+    <ul>
+        {% for word in mixed_words %}
+            <li>{{ word }}</li>
+        {% endfor %}
+    </ul>
+{% endif %}
+
+{% endblock %}
